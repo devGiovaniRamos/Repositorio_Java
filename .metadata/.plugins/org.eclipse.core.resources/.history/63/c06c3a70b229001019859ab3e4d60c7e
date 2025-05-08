@@ -1,0 +1,35 @@
+package exe001;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class exe {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double l, a, p, m, res;
+		
+		System.out.println("Digite a largura do terreno:");
+		l = sc.nextDouble();
+		sc.nextLine();
+		System.out.println("Digite a altura do terreno:");
+		a = sc.nextDouble();
+		sc.nextLine();
+		System.out.println("Digite o preço do metro quadrado:");
+		p = sc.nextDouble();
+		sc.nextLine();
+		
+		m = l * a;
+		res = p * m;
+		
+		System.out.println("O terreno tem "+ m +" metros quadrados e"
+				+ " custará "+ res +" reais.");
+		
+		sc.close();
+
+	}
+
+}
